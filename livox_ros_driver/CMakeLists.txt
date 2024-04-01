@@ -151,6 +151,7 @@ target_compile_options(${PROJECT_NAME}_node
 #---------------------------------------------------------------------------------------
 # add projects that depend on
 #---------------------------------------------------------------------------------------
+add_dependencies(r3live_LiDAR_front_end ${catkin_EXPORTED_TARGETS})
 add_dependencies(${PROJECT_NAME}_node ${PROJECT_NAME}_generate_messages_cpp)
 
 #---------------------------------------------------------------------------------------
